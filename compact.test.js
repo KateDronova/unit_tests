@@ -9,7 +9,7 @@ test('The parameter should be an array', () => {
   expect(checkIfParamIsArray(compact([1, 2, 3]))).toBeTruthy();
 });
 
-test('Empty array returns empty array', () => {
+test('Empty array returns itself', () => {
   expect(compact([])).toEqual([]);
 });
 

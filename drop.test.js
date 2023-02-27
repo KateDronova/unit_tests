@@ -9,7 +9,7 @@ test('The first parameter should be an array', () => {
   expect(checkIfParamIsArray(drop([1, 2, 3]))).toBeTruthy();
 });
 
-test('An empty array returns an empty array', () => {
+test('An empty array returns itself', () => {
   expect(drop([])).toEqual([]);
 });
 

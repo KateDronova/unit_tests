@@ -1,7 +1,7 @@
 function dropWhile(arr, predicate) {
   const ifParamIsArray = arr instanceof Array;
   if (!ifParamIsArray) {
-    return 'The parameter should be an array';
+    return 'The first parameter should be an array';
   }
   let result = [];
   let resultIndex = 0;
