@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/KateDronova/unit_tests/issues"
   },
-  "homepage": "https://github.com/KateDronova/unit_tests#readme"
+  "homepage": "https://github.com/KateDronova/unit_tests#readme",
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
 }
