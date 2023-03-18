@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/KateDronova/unit_tests#readme",
   "devDependencies": {
+    "jest": "^29.5.0",
     "lodash": "^4.17.21"
   }
 }
