@@ -2,7 +2,7 @@ const { checkParamIsArray, checkParamIsObject } = require("./utils.js");
 
 function filter(collection, predicate) {
   if (checkParamIsArray(collection) || checkParamIsObject(collection)) {
-    let result = [];
+    const result = [];
     let resultIndex = 0;
     if (checkParamIsArray(predicate)) {
       for (let i = 0; i < collection.length; i += 1) {
@@ -19,7 +19,7 @@ function filter(collection, predicate) {
       return result;
     }
     if (checkParamIsObject(predicate)) {
-      let arrOfTrue = [];
+      const arrOfTrue = [];
       let arrOfTrueIndex = 0;
       for (let i = 0; i < collection.length; i += 1) {
         for (let k = 0; k < Object.entries(collection[i]).length; k += 1) {

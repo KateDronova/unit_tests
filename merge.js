@@ -2,7 +2,7 @@ const { checkParamIsArray, checkParamIsObject } = require("./utils.js");
 
 function merge(...objects) {
   if (checkParamIsObject(objects[0])) {
-    let result = objects[0];
+    const result = Object.assign(objects[0]);
     if (checkParamIsArray(Object.values(result)[0])) {
       for (let i = 1; i < objects.length; i += 1) {
         for (let j = 0; j < Object.keys(objects[i]).length; j += 1) {

@@ -1,9 +1,7 @@
 function customSlice(arr, a = 0, b = arr.length) {
     const result = [];
-    let resultIndex = 0;
     for (let i = a; i < b; i++) {
-        result[resultIndex] = arr[i];
-        resultIndex += 1;
+        result[result.length] = arr[i];
     }
     return result;
 }

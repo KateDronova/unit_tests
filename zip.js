@@ -2,19 +2,16 @@ const { checkParamIsArray } = require("./utils.js");
 
 function zip(...arrays) {
   if (checkParamIsArray(arrays)) {
-    let result = [];
+    const result = [];
     let tempResult = [];
-    let tempResultIndex = 0;
     let arrayIndex = 0;
     for (let resultIndex = 0; resultIndex < arguments[0].length; resultIndex += 1) {
       for (let i = 0; i < arrays.length; i++) {
-        tempResult[tempResultIndex] = arrays[i][arrayIndex];
-        tempResultIndex += 1;
+        tempResult[tempResult.length] = arrays[i][arrayIndex];
       }
       if (tempResult) {
         result[resultIndex] = tempResult;
         tempResult = [];
-        tempResultIndex = 0;
         arrayIndex += 1;
       };
     }

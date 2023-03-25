@@ -1,8 +1,7 @@
 const { customSlice, checkParamIsArray } = require("./utils.js");
 
 function dropWhile(arr, predicate) {
-  let result = [];
-  let resultIndex = 0;
+  const result = [];
   if (checkParamIsArray(arr)) {
     if (predicate instanceof Array) {
       for (let i = 0; i < arr.length; i += 1) {
@@ -24,8 +23,7 @@ function dropWhile(arr, predicate) {
         JSON.stringify(arr[i]) !== JSON.stringify(predicate))
     ) {
       for (let j = i; j < arr.length; j += 1) {
-        result[resultIndex] = arr[j];
-        resultIndex += 1;
+        result[result.length] = arr[j];
       }
       i = arr.length;
     }

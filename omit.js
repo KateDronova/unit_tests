@@ -2,7 +2,7 @@ const { checkParamIsObject } = require("./utils.js");
 
 function omit(object, arr) {
   if (checkParamIsObject(object)) {
-    const result = object;
+    const result = Object.assign({}, object);
     if (arr) {
       let index = 0;
       for (const key in object) {
