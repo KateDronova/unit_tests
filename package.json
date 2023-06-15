@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:cover": "jest --coverage",
     "testwatch": "jest --watchAll"
   },
   "repository": {
@@ -17,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/KateDronova/unit_tests/issues"
   },
-  "homepage": "https://github.com/KateDronova/unit_tests#readme"
+  "homepage": "https://github.com/KateDronova/unit_tests#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "lodash": "^4.17.21"
+  }
 }
